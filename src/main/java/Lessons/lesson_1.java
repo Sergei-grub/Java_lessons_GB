@@ -1,3 +1,4 @@
+package Lessons;
 /**
  * Лекция 1
  */
@@ -5,7 +6,7 @@
 /* Основы: типы данных */
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  *
  * System.out.println("Goodbye world");
@@ -59,8 +60,7 @@
 
 /*
  *
- * class Program
- * {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * System.out.println(Integer.MAX_VALUE); // 2147483647
  * System.out.println(Integer.MIN_VALUE); // -2147483648
@@ -70,7 +70,7 @@
 
 /* Массивы Одномерные */
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int[] arr = new int[10];
  * System.out.println(arr.length); // 10
@@ -83,7 +83,7 @@
 
 /* Массивы Многомерные */
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int[] arr[] = new int[3][11];
  * for (int[] line : arr) {
@@ -97,7 +97,7 @@
  */
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int[][] arr = new int[3][5];
  * for (int i = 0; i < arr.length; i++) {
@@ -111,7 +111,7 @@
  */
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int i = 123;
  * double d = i;
@@ -134,7 +134,7 @@
  */
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int[] a = new int[10];
  * System.out.println(a);
@@ -148,7 +148,7 @@
 /*
  * import java.util.Scanner;
  *
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * Scanner iScanner = new Scanner(System.in);
  * System.out.printf("name: ");
@@ -164,7 +164,7 @@
 /*
  * import java.util.Scanner;
  *
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * Scanner iScanner = new Scanner(System.in);
  * System.out.printf("int a: ");
@@ -182,7 +182,7 @@
 /*
  * import java.util.Scanner;
  *
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * Scanner iScanner = new Scanner(System.in);
  * System.out.printf("int a: ");
@@ -197,7 +197,7 @@
 
 // Форматированный вывод
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int a = 1, b = 2;
  * int c = a + b;
@@ -208,7 +208,7 @@
  */
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int a = 1, b = 2;
  * int c = a + b;
@@ -234,7 +234,7 @@
 // Виды спецификаторов
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * float pi = 3.1415f;
  * System.out.printf("%f\n", pi); // 3,141500
@@ -250,7 +250,7 @@
 // Функции и методы
 
 /*
- * class Program {
+ * public class lesson_1 {
  * static void sayHi() {
  * System.out.println("Hi!");
  * }
@@ -275,7 +275,7 @@
 
 // Управляющие конструкции: условный оператор
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int a = 1;
  * int b = 2;
@@ -292,7 +292,7 @@
 // Управляющие конструкции: тернарный оператор
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int a = 1;
  * int b = 2;
@@ -307,7 +307,7 @@
 /*
  * import java.util.Scanner;
  *
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int mounth = 12;
  * String text = "";
@@ -329,7 +329,7 @@
 // Цикл while
 
 /*
- * class Program {
+ * public class lesson_1 {
  *
  * public static void main(String[] args) {
  * int value = 321;
@@ -347,7 +347,7 @@
 // Цикл do while
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int value = 321;
  * int count = 0;
@@ -363,7 +363,7 @@
 // Оператор цикла for
 
 /*
- * class Program {
+ * public class lesson_1 {
  * public static void main(String[] args) {
  * int s = 0;
  * for (int i = 1; i <= 10; i++) {
@@ -377,7 +377,7 @@
 
 // Вложенные циклы
 
-class Program {
+public class lesson_1 {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
