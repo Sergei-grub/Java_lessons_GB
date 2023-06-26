@@ -1,4 +1,5 @@
 package Lessons;
+
 /**
  * Лекция 1
  */
@@ -377,6 +378,7 @@ package Lessons;
 
 // Вложенные циклы
 
+/*
 public class lesson_1 {
     public static void main(String[] args) {
         for (int i = 0; i < 5; i++) {
@@ -386,4 +388,191 @@ public class lesson_1 {
             System.out.println();
         }
     }
+}*/
+
+/*
+public class lesson_1 {
+    public static void main(String[] args){
+        int a = 123;
+        a = --a - a--;
+        System.out.println(a);
+        System.out.println(--a);
+        a--;
+        System.out.println(a);
+    }
+}*/
+
+/*
+import java.util.Scanner;
+public class lesson_1 {
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        System.out.printf("int a: ");
+        boolean flag = iScanner.hasNextInt();
+        System.out.println(flag);
+        int i = iScanner.nextInt();
+        System.out.println(i);
+        iScanner.close();
+    }
+}*/
+
+//Функции и методы
+/*
+
+public class lesson_1 {
+    static void sayHi() {
+        System.out.println("hi!");
+    }
+
+    static int sum(int a, int b) {
+        return a + b;
+    }
+
+    static double factor(int n) {
+        if (n == 1) return 1;
+        return n * factor(n - 1);
+    }
+
+    public static void main(String[] args) {
+        sayHi(); // hi!
+        System.out.println(sum(1, 3)); // 4
+        System.out.println(factor(5)); // 120.0
+        }
+    }
+}*/
+
+/*
+// Оператор выбора
+import java.util.Scanner;
+public class lesson_1 {
+    public static void main(String[] args) {
+        Scanner iScanner = new Scanner(System.in);
+        int mounth = iScanner.nextInt();
+        String text = "";
+        switch (mounth) {
+            case 1:
+                text = "Autumn";
+                break;
+            default:
+                text = "mistake";
+                break;
+        }
+
+        System.out.println(text);
+        iScanner.close();
+    }
 }
+*/
+
+//Цикл while
+/*
+public class lesson_1 {
+    public static void main(String[] args) {
+        int value = 321;
+        int count = 0;
+        while (value != 0) {
+            value /= 10;
+            count++;
+        }
+        System.out.println(count);
+    }
+}
+*/
+
+//Цикл do while
+/*
+public class lesson_1 {
+    public static void main(String[] args) {
+        int value = 321;
+        int count = 0;
+        do {
+            value /= 10;
+            count++;
+        } while (value != 0);
+        System.out.println(count);
+    }
+}
+*/
+
+//Оператор цикла for
+/*
+public class lesson_1 {
+    public static void main(String[] args) {
+        int s = 0;
+        for (int i = 1; i <= 10; i++) {
+            s += i;
+        }
+        System.out.println(s);
+    }
+}*/
+
+
+
+//Работа с файлами
+
+
+//Создание и запись\ дозапись
+/*
+import java.io.FileWriter;
+import java.io.IOException;
+public class lesson_1 {
+    public static void main(String[] args) {
+        try (FileWriter fw = new FileWriter("file.txt", false)) {
+            fw.write("line 1");
+            fw.append('\n');
+            fw.append('2');
+            fw.append('\n');
+            fw.write("line 3");
+            fw.flush();
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+}*/
+
+//Чтение, Вариант посимвольно
+/*
+import java.io.*;
+public class lesson_1 {
+    public static void main(String[] args) throws Exception {
+        FileReader fr = new FileReader("file.txt");
+        int c;
+        while ((c = fr.read()) != -1) {
+            char ch = (char) c;
+            if (ch == '\n') {
+                System.out.print(ch);
+            } else {
+                System.out.print(ch);
+            }
+        }
+    }
+}*/
+
+//Вариант построчно
+/*
+import java.io.*;
+public class lesson_1 {
+    public static void main(String[] args) throws Exception {
+        BufferedReader br = new BufferedReader(new FileReader("file.txt"));
+        String str;
+        while ((str = br.readLine()) != null) {
+            System.out.printf("== %s ==\n", str);
+        }
+        br.close();
+    }
+}*/
+
+
+//Задачи для самоконтроля
+/*
+1. Задана натуральная степень k.
+Сформировать случайным образом список коэффициентов (значения от 0 до 100)
+многочлена многочлен степени k.
+*Пример: k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
+*/
+
+/*
+2. Даны два файла, в каждом из которых находится запись
+многочлена. Сформировать файл содержащий сумму
+многочленов.
+*/
