@@ -1,9 +1,10 @@
-package Homework;
-
 /*
 Урок 1. Знакомство с языком программирования Java
 2) Вывести все простые числа от 1 до 1000
 */
+
+package Homework;
+
 public class Task_2 {
 
     public static void main(String[] args) {
