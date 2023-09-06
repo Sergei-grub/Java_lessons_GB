@@ -1,5 +1,10 @@
 package Lessons;
 
+import java.util.Random;
+import java.util.Scanner;
+import static java.io.PrintStream.*;
+import static java.lang.System.out;
+
 /**
  * Лекция 1
  */
@@ -531,8 +536,7 @@ public class lesson_1 {
 }*/
 
 //Чтение, Вариант посимвольно
-/*
-import java.io.*;
+/*import java.io.*;
 public class lesson_1 {
     public static void main(String[] args) throws Exception {
         FileReader fr = new FileReader("file.txt");
@@ -570,9 +574,33 @@ public class lesson_1 {
 многочлена многочлен степени k.
 *Пример: k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 */
+//public class lesson_1 {
+//    public static void main(String[] args){
+//        Random random = new Random();
+//        Scanner in = new Scanner(System.in);
+//        System.out.print("Введите коэффицент: ");
+//        int k = in.nextInt();
+//        in.close();
+//        System.out.printf("k=%d => ", k);
+//        while (k !=1){
+//            int num = random.nextInt(100);
+//            System.out.printf("%d*x^%d + ", num, k);
+//            k--;
+//        }
+//        int num = random.nextInt(100);
+//        int num2 = random.nextInt(100);
+//        System.out.printf("%d*x + %d = 0", num, num2);
+//    }
+// }
+
 
 /*
 2. Даны два файла, в каждом из которых находится запись
 многочлена. Сформировать файл содержащий сумму
 многочленов.
 */
+public class lesson_1 {
+    public static void main(String[] args){
+        System.out.println("Hi");
+    }
+}
