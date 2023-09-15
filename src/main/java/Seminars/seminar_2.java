@@ -1,6 +1,13 @@
 package Seminars;
 
+
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Objects;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 
 public class seminar_2 {
 //    public static void main(String[] args) {
@@ -86,10 +93,45 @@ public class seminar_2 {
 //    }
 //}
 
-    public static void main(String[] args) {
-        String word = "1мадам";
-        StringBuilder newStr = new StringBuilder(word);
-        if (newStr.reverse().toString().equals(word)) System.out.println(newStr + " - это палиндром!");
-        else System.out.println(newStr + " - не палиндром!");
+//    public static void main(String[] args) {
+//        String word = "1мадам";
+//        StringBuilder newStr = new StringBuilder(word);
+//        if (newStr.reverse().toString().equals(word)) System.out.println(newStr + " - это палиндром!");
+//        else System.out.println(newStr + " - не палиндром!");
+//    }
+//
+//
+
+
+    public static void main(String[] args) throws IOException {
+        try {
+            FileWriter nwFl = new FileWriter("jastFile.txt");
+            nwFl.write("Hi man!");
+            nwFl.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Logger mJrnl_1 = Logger.getLogger(seminar_2.class.getName());
+        try {
+            FileHandler ffLg = new FileHandler("mylog.txt");
+            ffLg.setFormatter(new SimpleFormatter());
+            mJrnl_1.addHandler(ffLg);
+            mJrnl_1.setLevel(Level.ALL);
+
+            mJrnl_1.info("info log in this Prog");
+            mJrnl_1.warning("warning log");
+            mJrnl_1.severe("Severe is YES");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //clearScreen();
+
+
     }
+
+//    public static void clearScreen() {
+//        System.out.print("\033[H\033[2J");
+//        System.out.flush();
+//    }
 }

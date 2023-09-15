@@ -40,7 +40,7 @@ public class seminar_1v2 {
                 count++;
                 if (count > result) result = count;
             } else count = 0;
-        System.out.printf("Массив содержит больше идущих подряд единиц - %d", result);
+        System.out.printf("Массив содержит %d идущих подряд единиц.", result);
     }
 }
 
