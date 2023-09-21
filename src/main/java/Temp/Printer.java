@@ -1,51 +1,44 @@
 package Temp;
 
+
 import java.util.LinkedList;
 
+class MyQueue<T> {
+    private LinkedList<T> elements = new LinkedList<>();
 
-public class Printer {
+    public MyQueue() {
+    }
 
-    static class MyQueue<T> {
-        private LinkedList<Object> elements = new LinkedList<>();
+    public MyQueue(LinkedList<T> elements) {
+        this.elements = elements;
+    }
 
-        public MyQueue() {
-        }
+    public void enqueue(T element) {
+        elements.add(element);
+    }
 
-        public MyQueue(LinkedList<Object> elements) {
-
-            this.elements = elements;
-        }
-
-        public void enqueue(T element) {
-
-            elements.add(element);
-        }
-
-        public T dequeue() {
-            Object first = elements.getFirst();
-            elements.removeFirst();
-            return (T) first;
-        }
+    public void dequeue() {
+        T first = (T) elements.getFirst();
+        elements.removeFirst();
+    }
 
         public Object first() {
 
             return elements.getFirst();
         }
 
-        public LinkedList<Object> getElements() {
-            return elements;
-        }
-
-        public void setElements(LinkedList<Object> elements) {
-
-            this.elements = elements;
-        }
+    public LinkedList<T> getElements() {
+        return elements;
     }
 
+    public void setElements(LinkedList<T> elements) {
+        this.elements = elements;
+    }
+}
 
+class Task_33 {
     public static void main(String[] args) {
-
-        MyQueue queue = new MyQueue<>();
+        MyQueue<Integer> queue = new MyQueue<>();
 
         if (args.length == 0) {
             queue.enqueue(1);
