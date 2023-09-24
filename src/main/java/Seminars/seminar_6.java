@@ -57,5 +57,6 @@ public class seminar_6 {
             arr[i] = random.nextInt(1, 999);
         }
         System.out.println("Кол-во уникальных значений: " + sortSet(arr) + "%");
+        Sets();
     }
 }
