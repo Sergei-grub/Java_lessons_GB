@@ -1,8 +1,6 @@
 package Temp;
 
 
-import javax.swing.*;
-
 // Описание класса:
 class MyClass {
     int num;
@@ -11,7 +9,7 @@ class MyClass {
 
 
     // Метод класса:
-    String showText() {
+    void showText() {
 
         // Локальная текстовая переменная:
         String str = "Значения полей объекта:\n";
@@ -21,23 +19,24 @@ class MyClass {
         str += "symb=" + symb + "\n";
         str += "text=" + text + "\n";
 
+        // Метод показывает значения:
+        System.out.println(str);
 
-        // Метод возвращает значение:
-        return str;
     }
 }
 
 class Tester {
     int num;
     long result;
-    Long factorial(){
+    void factorial(){
 //        int n = result;
 
         for (int i = 1; i <= num; i++) {
             result *= i;
             System.out.println("Step " + i + " = " + result);
         }
-        return result;
+//        return result;
+        System.out.println("Факториал " + num + "!= " + result);
     }
 }
 
@@ -47,6 +46,7 @@ public class fstClass {
         long start = System.currentTimeMillis();
         MyClass obj = new MyClass();
         MyClass obj2 = new MyClass();
+
         Tester fact = new Tester();
 
         // Заполнение полей объекта:
@@ -54,15 +54,23 @@ public class fstClass {
         obj.symb = 'A';
         obj.text = "Текстовое поле";
 
-        fact.num = 19;
+        obj2.num = 1;
+        obj2.symb = 'B';
+        obj2.text = "Текстовое поле 2";
+
+        fact.num = 7;
         fact.result = 1;
 
 
         // Отображение окна:
-//        JOptionPane.showMessageDialog(null, obj.showText() + "\n" + obj2.showText());
-//        System.out.println(obj2.showText());
-//        JOptionPane.showMessageDialog(null, fact.factorial());
-        System.out.println("Факториал " + fact.num + "!= " + fact.factorial());
+
+        obj.showText();
+        obj2.showText();
+
+        fact.factorial();
+
+
+
         long stop = System.currentTimeMillis();
         System.out.print("Time: " + (stop-start));
     }
