@@ -1,10 +1,15 @@
 package OOP_seminars.Seminar_2;
+
 public class Human extends Actor {
 
-    public Human(String name) {
-        super(name);
+    public Human(Integer id, String name) {
+        super(id, name);
     }
 
+    @Override
+    public Integer getId() {
+        return super.id;
+    }
     @Override
     public String getName() {
         return super.name;
@@ -12,6 +17,7 @@ public class Human extends Actor {
 
     @Override
     public void setMakeOrder(boolean makeOrder) {
+
         super.isMakeOrder = makeOrder;
     }
 
