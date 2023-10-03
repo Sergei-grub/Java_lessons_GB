@@ -1,4 +1,4 @@
-package OOP_seminars.Seminar_2;
+package OOP_Homework.Task_2;
 
 import java.util.List;
 

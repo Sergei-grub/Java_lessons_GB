@@ -1,4 +1,4 @@
-package OOP_seminars.Seminar_2;
+package OOP_Homework.Task_2;
 
 
 public class Main {
@@ -12,13 +12,10 @@ public class Main {
         Human human5 = new Human(++id,"Vladimir");
         Human human6 = new Human(++id,"Emil");
 
-
         market.acceptToMarket(human1);
         market.acceptToMarket(human2);
-        market.update();
         market.acceptToMarket(human3);
         market.acceptToMarket(human4);
-        market.update();
         market.acceptToMarket(human5);
         market.acceptToMarket(human6);
         market.update();
