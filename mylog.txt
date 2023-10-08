@@ -1,6 +1,6 @@
-сент. 12, 2023 3:44:04 PM Seminars.seminar_2 main
+сент. 12, 2023 3:44:04 PM Seminars.Temp_seminars.seminar_2 main
 INFO: info log in this Prog
-сент. 12, 2023 3:44:04 PM Seminars.seminar_2 main
+сент. 12, 2023 3:44:04 PM Seminars.Temp_seminars.seminar_2 main
 WARNING: warning log
-сент. 12, 2023 3:44:04 PM Seminars.seminar_2 main
+сент. 12, 2023 3:44:04 PM Seminars.Temp_seminars.seminar_2 main
 SEVERE: Severe is YES

@@ -1,4 +1,4 @@
-package Seminars;
+package Seminars.Temp_seminars;
 
 public class Dog {
 

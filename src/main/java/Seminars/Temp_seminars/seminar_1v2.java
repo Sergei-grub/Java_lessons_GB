@@ -1,4 +1,4 @@
-package Seminars;
+package Seminars.Temp_seminars;
 
 
 //public class Seminar1_v2 {
@@ -41,7 +41,10 @@ public class seminar_1v2 {
                 if (count > result) result = count;
             } else count = 0;
         System.out.printf("Массив содержит %d идущих подряд единиц.", result);
+
+
     }
+
 }
 
 

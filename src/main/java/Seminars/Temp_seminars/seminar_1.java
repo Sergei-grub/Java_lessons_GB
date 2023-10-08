@@ -1,4 +1,4 @@
-package Seminars;
+package Seminars.Temp_seminars;
 
 import java.util.Scanner;
 

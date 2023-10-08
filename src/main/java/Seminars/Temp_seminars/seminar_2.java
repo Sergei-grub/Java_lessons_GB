@@ -1,9 +1,8 @@
-package Seminars;
+package Seminars.Temp_seminars;
 
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Objects;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;

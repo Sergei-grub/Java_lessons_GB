@@ -26,7 +26,7 @@ public class Task_1 {
         listProduct.add(new HotDrink("Cappuccino", 0.5, 50));
         HotDrinkVendingMachine vendingMachine = new HotDrinkVendingMachine(listProduct);
 
-        System.out.println(vendingMachine.getProduct("Americano", 0.7, 50));
+        System.out.println(vendingMachine.getProduct("Americano", 0.5, 50));
         System.out.println(vendingMachine.getProductList());
     }
 }

@@ -1,6 +1,4 @@
-package Seminars;
-
-import java.util.Date;
+package Seminars.Temp_seminars;
 
 public class Main {
     public static void main(String[] args) {
