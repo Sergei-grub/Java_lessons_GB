@@ -5,16 +5,13 @@ import java.util.List;
 
 public class StudentGroup implements Iterable<Student>{
     private List<Student> studentsList;
-    private Teacher teacher;
-
-    @Override
-    public Iterator<Student> iterator() {
-        return new StudentGroupIterator(this.studentsList);
-    }
 
     public StudentGroup(List<Student> students) {
         this.studentsList = students;
-        this.teacher = teacher;
+    }
+    @Override
+    public Iterator<Student> iterator() {
+        return new StudentGroupIterator(this.studentsList);
     }
 
     public List<Student> getStudents() {
@@ -25,19 +22,11 @@ public class StudentGroup implements Iterable<Student>{
         this.studentsList = students;
     }
 
-    public Teacher getTeacher() {
-        return teacher;
-    }
-
-    public void setTeacher(Teacher teacher) {
-        this.teacher = teacher;
-    }
 
     @Override
     public String toString() {
         return "StudentGroup{" +
                 "students=" + studentsList +
-                ", teacher=" + teacher +
                 '}';
     }
 
