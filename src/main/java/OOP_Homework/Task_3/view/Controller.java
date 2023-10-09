@@ -52,11 +52,11 @@ public class Controller {
 
             Flow f1 = new Flow();
             f1.getGroupsList().add(grr1);
-            System.out.println();
+//            System.out.println();
 
-            for (Flow i : groupList) {
-                System.out.println(i);
-            }
+//            for (Flow i : groupList) {
+//                System.out.println(i);
+//            }
 
     }
 
