@@ -13,9 +13,9 @@ public class StudentGroupIterator implements Iterator<Student> {
         this.studentList = studentList;
         this.counter = 0;
     }
-//public void zeroCounter(){
-//        this.counter = 0;
-//}
+public void zeroCounter(){
+        this.counter = 0;
+}
     @Override
     public boolean hasNext() {
         return counter < studentList.size();
@@ -31,6 +31,6 @@ public class StudentGroupIterator implements Iterator<Student> {
     @Override
     public void remove() {
         studentList.remove(counter);
-//        Iterator.super.remove();
+        Iterator.super.remove();
     }
 }

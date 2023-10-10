@@ -30,9 +30,6 @@ public class StudentGroup implements Iterable<Student>{
                 '}';
     }
 
-//    @Override
-//    public StudentGroupIterator iterator() {
-//        return new StudentGroupIterator((List<Student>) this);
-//    }
+
 
 }

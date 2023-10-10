@@ -1,21 +1,24 @@
 package OOP_Homework.Task_3.model;
 
-public class Group {
-    private int groupNum;
+import Seminars.OOP_seminar_3.TeacherGit.data.Student;
+import Seminars.OOP_seminar_3.TeacherGit.data.User;
+
+public class Group implements Comparable<Group>{
+    private String groupNum;
     private String groupName;
     private int countOfStudents;
 
-    public Group(int groupNamb, String groupName, int countOfStudents) {
+    public Group(String groupNamb, String groupName, int countOfStudents) {
         this.groupNum = groupNamb;
         this.groupName = groupName;
         this.countOfStudents = countOfStudents;
     }
 
-    public int getGroupNum() {
+    public String getGroupNum() {
         return groupNum;
     }
 
-    public void setGroupNum(int groupNum) {
+    public void setGroupNum(String groupNum) {
         this.groupNum = groupNum;
     }
 
@@ -37,9 +40,18 @@ public class Group {
 
     @Override
     public String toString() {
-        return "Group: " +
+        return "\nGroup: " +
                 "groupNam = " + groupNum +
                 ", groupName ='" + groupName + '\'' +
                 ", countOfStudents =" + countOfStudents;
     }
+
+    @Override
+    public int compareTo(Group o) {
+        return this.groupNum.compareTo(o.groupNum);
+    }
+
+
+
+
 }

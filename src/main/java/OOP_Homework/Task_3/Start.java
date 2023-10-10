@@ -1,10 +1,7 @@
 package OOP_Homework.Task_3;
 
-import OOP_Homework.Task_3.model.Group;
 import OOP_Homework.Task_3.view.Controller;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 
