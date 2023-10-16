@@ -1,4 +1,4 @@
-package Lesson_07.Ex004;
+package OOP_Lessons.Lesson_1.Ex004;
 
 public class Program {
     public static void main(String[] args) {

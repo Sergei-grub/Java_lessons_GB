@@ -1,4 +1,4 @@
-package Lesson_07.Ex003;
+package OOP_Lessons.Lesson_1.Ex003;
 
 public class Program {
 
