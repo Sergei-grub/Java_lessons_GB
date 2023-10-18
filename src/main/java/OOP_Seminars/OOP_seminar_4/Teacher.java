@@ -1,14 +1,14 @@
-package OOP_Seminars.OOP_seminar_4.data;
+package OOP_Seminars.OOP_seminar_4;
 
-import java.time.LocalDate;
 import java.util.Comparator;
 
-public class Teacher extends User{
+public class Teacher extends User {
 
     private Long teacherId;
 
-    public Teacher(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
+    public Teacher(String firstName, String secondName, String patronymic, String dateOfBirth, Long teacherId) {
         super(firstName, secondName, patronymic, dateOfBirth);
+        this.teacherId = teacherId;
     }
 
     public Long getTeacherId() {

@@ -1,8 +1,8 @@
-package OOP_Seminars.OOP_seminar_4.view;
+package OOP_Homework.Task_4.view;
 
-import OOP_Seminars.OOP_seminar_4.Student;
+import OOP_Homework.Task_4.data.Teacher;
+import OOP_Homework.Task_4.data.User;
 import OOP_Seminars.OOP_seminar_4.StudentGroup;
-import OOP_Seminars.OOP_seminar_4.User;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -21,8 +21,8 @@ public class UserView {
         logger.info(studentGroup.toString());
     }
 
-    public void sendOnConsoleListStudent(List<Student> students){
-        logger.info(students.toString());
+    public void sendOnConsoleListStudent(List<Teacher> teachers){
+        logger.info(teachers.toString());
     }
 
 }

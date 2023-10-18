@@ -1,9 +1,11 @@
 package OOP_Seminars.OOP_seminar_4.service;
 
-import OOP_Seminars.OOP_seminar_4.data.Student;
-import OOP_Seminars.OOP_seminar_4.data.UserComparator;
-import OOP_Seminars.OOP_seminar_4.data.StudentGroup;
-import OOP_Seminars.OOP_seminar_4.data.Teacher;
+import OOP_Seminars.OOP_seminar_4.Student;
+import OOP_Seminars.OOP_seminar_4.StudentComparator;
+import OOP_Seminars.OOP_seminar_4.StudentGroup;
+import OOP_Seminars.OOP_seminar_4.Teacher;
+import OOP_Seminars.OOP_seminar_4.User;
+import OOP_Seminars.OOP_seminar_4.UserComparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,7 +33,7 @@ public class StudentGroupService {
                 result.add(student);
             }
         }
-        if(result.isEmpty()){
+        if(result.size() == 0){
             throw new IllegalStateException(
                     String.format("Студент с именем %s и фамилией %s не найден", firstName, secondName)
             );

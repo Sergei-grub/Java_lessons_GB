@@ -1,6 +1,5 @@
-package OOP_Seminars.OOP_seminar_4.service;
+package OOP_Homework.Task_4.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface UserService<T> {

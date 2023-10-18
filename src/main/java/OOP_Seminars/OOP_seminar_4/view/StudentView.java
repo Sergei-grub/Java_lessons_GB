@@ -1,24 +1,17 @@
 package OOP_Seminars.OOP_seminar_4.view;
 
-import OOP_Seminars.OOP_seminar_4.data.Student;
-import OOP_Seminars.OOP_seminar_4.data.StudentGroup;
+import OOP_Seminars.OOP_seminar_4.Student;
 
 import java.util.List;
-import java.util.logging.Logger;
 
-public class StudentView implements UserView<Student>{
+public class StudentView implements IUserView<Student>  {
 
-    Logger logger = Logger.getLogger(StudentView.class.getName());
+
 
     @Override
-    public void sendOnConsole(List<Student> students) {
-        for(Student user: students){
-            logger.info(user.toString());
+    public void sendOnConsole(List<Student> list) {
+        for (Student i : list){
+            System.out.println(i.toString());
         }
     }
-
-    public void sendOnConsoleUserGroup(StudentGroup studentGroup){
-        logger.info(studentGroup.toString());
-    }
-
 }

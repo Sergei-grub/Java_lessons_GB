@@ -1,4 +1,4 @@
-package OOP_Seminars.OOP_seminar_4.data;
+package OOP_Seminars.OOP_seminar_4;
 
 import java.util.Comparator;
 
@@ -19,3 +19,6 @@ public class UserComparator<T extends User> implements Comparator<T> {
         }
     }
 }
+
+
+
