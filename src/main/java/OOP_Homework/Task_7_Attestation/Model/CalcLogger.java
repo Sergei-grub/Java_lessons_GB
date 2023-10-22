@@ -1,6 +1,5 @@
 package OOP_Homework.Task_7_Attestation.Model;
 
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.FileHandler;
@@ -11,7 +10,6 @@ public class CalcLogger {
     public void logger() throws IOException {
 
         //Логгер программы
-
         Logger log = Logger.getLogger(CalcLogger.class.getName());
 
 
@@ -40,7 +38,4 @@ public class CalcLogger {
             System.out.println(ex.getMessage());
         }
     }
-
 }
-
-
