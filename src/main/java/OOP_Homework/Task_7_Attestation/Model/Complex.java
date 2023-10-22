@@ -7,7 +7,8 @@ public class Complex {
     double image; // Мнимая часть Комплексного числа
 
 
-    public Complex() {// Конструктор принимает данные и передает
+    public Complex() {
+        // Конструктор принимает данные от пользователя
         Scanner input = new Scanner(System.in);
         System.out.print("\nДействительная часть -> ");
         this.real = input.nextDouble();

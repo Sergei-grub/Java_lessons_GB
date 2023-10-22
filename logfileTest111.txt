@@ -1,0 +1,4 @@
+окт. 22, 2023 3:14:33 PM OOP_Homework.Task_7_Attestation.Model.CalcLogger logger
+INFO: Test log 3333
+окт. 22, 2023 3:14:35 PM OOP_Homework.Task_7_Attestation.Controller.SelectOperation calc
+INFO: Запуск 
