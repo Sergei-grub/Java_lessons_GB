@@ -11,18 +11,18 @@ public class UserView {
 
     Logger logger = Logger.getLogger(UserView.class.getName());
 
-    public void sendOnConsole(List<User> userList){
-        for(User user: userList){
-            logger.info(user.toString());
-        }
-    }
-
-    public void sendOnConsoleUserGroup(StudentGroup studentGroup){
-        logger.info(studentGroup.toString());
-    }
-
-    public void sendOnConsoleListStudent(List<Teacher> teachers){
-        logger.info(teachers.toString());
-    }
+//    public void sendOnConsole(List<User> userList){
+//        for(User user: userList){
+//            logger.info(user.toString());
+//        }
+//    }
+//
+//    public void sendOnConsoleUserGroup(StudentGroup studentGroup){
+//        logger.info(studentGroup.toString());
+//    }
+//
+//    public void sendOnConsoleListStudent(List<Teacher> teachers){
+//        logger.info(teachers.toString());
+//    }
 
 }
