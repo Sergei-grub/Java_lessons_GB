@@ -1,8 +1,5 @@
 package OOP_Homework.Task_3.model;
 
-import Seminars.OOP_seminar_3.TeacherGit.data.Student;
-import Seminars.OOP_seminar_3.TeacherGit.data.User;
-
 public class Group implements Comparable<Group>{
     private String groupNum;
     private String groupName;
