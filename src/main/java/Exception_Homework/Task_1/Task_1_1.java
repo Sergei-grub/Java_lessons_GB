@@ -20,9 +20,9 @@ public class Task_1_1 {
 //        System.out.println(diff);
 
 
-
         //numberFormatException
-        int sToInt = new Integer("one");
+        String str = "one";
+        int num = Integer.parseInt(str);
     }
 }
 
