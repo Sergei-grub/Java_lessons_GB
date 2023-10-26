@@ -19,14 +19,16 @@ public class Task_1_1 {
 //        double diff = a / b;
 //        System.out.println(diff);
 
+
+
+
+
+
+
+
+
         //numberFormatException
-//        int aIntegerObj = new Integer("one");
-//        Double doubleDecimalObj = new Double("two.2");
-        String str = "one";
-        int num = Integer.parseInt(str);
-
+        int sToInt = new Integer("one");
     }
-
-
 }
 
