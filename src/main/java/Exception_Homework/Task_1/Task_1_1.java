@@ -3,7 +3,7 @@ package Exception_Homework.Task_1;
 import OOP_Seminars.Temp_seminars.Dog;
 
 import java.util.ArrayList;
-
+//Урок 1. Обработка ошибок в программировании Задача 1
 public class Task_1_1 {
     public static void main(String[] args) {
         //arrayOutOfBoundsException
@@ -18,12 +18,6 @@ public class Task_1_1 {
 //        int b = 0;
 //        double diff = a / b;
 //        System.out.println(diff);
-
-
-
-
-
-
 
 
 

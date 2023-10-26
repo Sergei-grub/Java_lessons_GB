@@ -1,7 +1,7 @@
 package Exception_Homework.Task_1;
 
 public class Task_1_2 {
-
+    //Урок 1. Обработка ошибок в программировании Задача 2
     public static int[] subArrays(int[] a, int[] b) {
         int i = 0;
 
