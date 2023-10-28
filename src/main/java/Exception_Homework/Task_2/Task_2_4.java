@@ -1,13 +1,11 @@
 package Exception_Homework.Task_2;
 
-import Exception_Seminars.Ex_Seminar_2.task1.MyArraySizeException;
-
 // Напишите программу, которая принимает символ a в качестве аргумента и выполняет следующую проверку:
 // если символ a равен пробелу '', программа должна выбрасывать исключение с сообщением
 // "Пустая строка введена.".
 // В противном случае программа должна возвращать сообщение
 // "Ваш ввод - [символ]", где [символ] заменяется на введенный символ a.
-public class Task_4 {
+public class Task_2_4 {
 
     class Expr {
         public static String expr(char a) throws Exception {

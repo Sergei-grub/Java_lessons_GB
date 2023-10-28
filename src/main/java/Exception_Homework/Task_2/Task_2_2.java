@@ -2,7 +2,7 @@ package Exception_Homework.Task_2;
 
 import java.util.Arrays;
 
-public class Task_2 {
+public class Task_2_2 {
 
     //Напишите программу, которая вычисляет значение выражения intArray[8] / d, гдеintArray- массив целых чисел, а d - делитель.
     //Программа проверяет, имеется ли в массиве intArray элемент с индексом 8, и если нет, выводит сообщение о невозможности выполнения операции.

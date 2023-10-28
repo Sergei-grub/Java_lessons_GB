@@ -7,7 +7,7 @@ package Exception_Homework.Task_2;
 //
 //На входе:
 
-public class Task_1 {
+public class Task_2_1 {
 
     class IsFloat {
         public static float isFloat(String input) {
