@@ -1,58 +1,20 @@
 package Exception_Homework.Task_3.Data;
 
+
+
 public class User {
-    private String fio;
-    private String birthday;
-    private int phoneNumber;
-    private char gender;
+    protected String userData;
 
-    public User(String fio, String birthday, int phoneNumber, char gender) {
-        this.fio = fio;
-        this.birthday = birthday;
-        this.phoneNumber = phoneNumber;
-        this.gender = gender;
+    protected User(String userData) {
+        this.userData = userData;
     }
 
-    public String getFio() {
-        return fio;
+    public String getUserData() {
+        return userData;
     }
 
-    public void setFio(String fio) {
-        this.fio = fio;
+    public static User create(String userData) {
+        return new User(userData);
     }
 
-    public String getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(String birthday) {
-        this.birthday = birthday;
-    }
-
-    public int getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(int phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
-    @Override
-    public String toString() {
-        return fio + ' ' +  birthday + ' ' + phoneNumber + ' ' + gender;
-    }
-
-    //Форматы данных:
-    //фамилия, имя, отчество - строки
-    //датарождения - строка формата dd.mm.yyyy
-    //номертелефона - целое беззнаковое число без форматирования
-    //пол - символ латиницей f или m.
 }
