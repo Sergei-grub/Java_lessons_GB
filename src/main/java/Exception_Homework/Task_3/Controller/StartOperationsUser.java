@@ -1,5 +1,6 @@
 package Exception_Homework.Task_3.Controller;
 
+import Exception_Homework.Task_3.Exceptions.BirthdayException;
 import Exception_Homework.Task_3.Exceptions.GenderDataException;
 import Exception_Homework.Task_3.Exceptions.NumDataException;
 import Exception_Homework.Task_3.Exceptions.PhoneNumDataException;
@@ -18,15 +19,21 @@ public class StartOperationsUser{
 
 
         try {
-            CheckUser.checkUser(result);
+            CheckUser.checkUser(result,surname);
 
         } catch (NumDataException e) {
             System.out.println(e.getMessage() + e.getData());
+        } catch (BirthdayException e) {
+            System.out.println(e.getBirthday());
         } catch (PhoneNumDataException e) {
-            System.out.println(e.getMessage() + e.getPhoneNum());;
-        } catch (Exception | GenderDataException e) {
-            throw new RuntimeException(e);
-        }
+            System.out.println(e.getMessage() + e.getPhoneNum());
+        } catch (GenderDataException e) {
+//            throw new RuntimeException(e);
+            System.out.println(e.getMessage() + e.getGenderData());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+    }
+
     }
 }
 

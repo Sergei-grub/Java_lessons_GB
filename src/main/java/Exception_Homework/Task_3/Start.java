@@ -1,6 +1,7 @@
 package Exception_Homework.Task_3;
 
 
+import Exception_Homework.Task_3.Controller.AddUserToFile;
 import Exception_Homework.Task_3.Controller.StartOperationsUser;
 import Exception_Homework.Task_3.Exceptions.NumDataException;
 
@@ -21,11 +22,18 @@ public class Start {
         int isExit = 1;
         System.out.println("* Программа запущена *\n");
         while (isExit == 1) {
-            System.out.println("Укажите 0 для выхода или 1 для запуска модуля ввода данных:");
+            System.out.println("\nУкажите 0 для выхода" +
+                    "\nУкажите 1 для запуска модуля ввода данных" +
+                    "\nУкажите 2 для просмотра списка созданных файлов >");
             userInput = input.next();
             if (Objects.equals(userInput, "1")) {
-                System.out.println("Введите данные пользователя, указав фамилию, имя, отчество, дату рождения, телефон (до 9 знаков) и пол (m или f): ");
+                System.out.println("Введите данные пользователя, указав фамилию, имя, отчество, дату рождения (формата dd.mm.yyyy), телефон (до 9 знаков) и пол (m или f): ");
                 user.addUser();
+            }
+            if (Objects.equals(userInput, "2")) {
+                AddUserToFile ff = new AddUserToFile();
+                ff.
+
             }
             if (Objects.equals(userInput, "0")) {
                 isExit = 0;
