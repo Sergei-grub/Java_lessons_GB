@@ -2,8 +2,6 @@ package Exception_Homework.Task_3.Controller;
 
 import Exception_Homework.Task_3.Data.User;
 
-
-import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,10 +28,8 @@ public class AddUserToFile {
     static void reWritFile(String newFileName, String newUser, List<String> filesUsers) throws IOException {
         for (String f : filesUsers) {
             if (Objects.equals(f, newFileName)) {
-                try (FileWriter fileReWriter = new FileWriter(f, true) {
-                    BufferedWriter bufferWriter = new BufferedWriter(fileReWriter);
-                    bufferWriter.w;
-                    bufferWriter.close();
+                try (FileWriter fileReWriter = new FileWriter(f) {
+                    fileReWriter.
                     System.out.println("Пользователь с фамилией <"+surname +"> добавлен в файл: "+f);
                 } catch(IOException e) {
                     System.out.println(e.getMessage());
