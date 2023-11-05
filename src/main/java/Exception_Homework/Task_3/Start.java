@@ -23,17 +23,17 @@ public class Start {
         System.out.println("* Программа запущена *\n");
         while (isExit == 1) {
             System.out.println("\nУкажите 0 для выхода" +
-                    "\nУкажите 1 для запуска модуля ввода данных" +
-                    "\nУкажите 2 для просмотра списка созданных файлов >");
+                    "\nУкажите 1 для запуска модуля ввода данных");
             userInput = input.next();
             if (Objects.equals(userInput, "1")) {
                 System.out.println("Введите данные пользователя, указав фамилию, имя, отчество, дату рождения (формата dd.mm.yyyy), телефон (до 9 знаков) и пол (m или f): ");
                 user.addUser();
             }
-            if (Objects.equals(userInput, "2")) {
-                AddUserToFile ff = new AddUserToFile();
-
-            }
+//            if (Objects.equals(userInput, "2")) {
+//                AddUserToFile ff = new AddUserToFile();
+//                ff.printFiles();
+//
+//            }
             if (Objects.equals(userInput, "0")) {
                 isExit = 0;
                 System.out.println("By!");

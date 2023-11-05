@@ -10,32 +10,34 @@ import java.util.Objects;
 
 public class AddUserToFile {
 
-    public static void prepareFile(String userData, String surname) throws IOException {
+    public static void prepareFile(String userData, String surname) {
 
         List<String> filesUsers = new ArrayList<>();
 
         User correctUser = User.create(userData);
         String newUser = correctUser.getUserData();
-        String newFileName = surname + "_(Task_3).txt";
+        String newFileName = surname + "_v2_(Task_3).txt";
+        filesUsers.add(newFileName);
 
-        if (filesUsers.isEmpty()) {
-            addFile(newFileName, newUser);
-        } else {
-            reWritFile(newFileName, newUser);
-        }
-    }
-
-    static void reWritFile(String newFileName, String newUser, List<String> filesUsers) throws IOException {
         for (String f : filesUsers) {
             if (Objects.equals(f, newFileName)) {
-                try (FileWriter fileReWriter = new FileWriter(f) {
-                    fileReWriter.
-                    System.out.println("Пользователь с фамилией <"+surname +"> добавлен в файл: "+f);
-                } catch(IOException e) {
-                    System.out.println(e.getMessage());
-                    e.printStackTrace();
-                }
+                reWritFile(newUser, f);
+            } else {
+                addFile(newFileName, newUser);
             }
+        }
+
+    }
+
+
+    static void reWritFile(String newUser, String fName) {
+
+        try (FileWriter writer = new FileWriter(fName, true)) {
+            writer.append("\n" + newUser);
+            System.out.println("В файл <" + fName + "> добавлена запись: " + newUser);
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
@@ -49,12 +51,6 @@ public class AddUserToFile {
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
-        }
-    }
-
-    static void printFiles(List<String> filesUsers) {
-        for (String f : filesUsers) {
-            System.out.println(f);
         }
     }
 }
