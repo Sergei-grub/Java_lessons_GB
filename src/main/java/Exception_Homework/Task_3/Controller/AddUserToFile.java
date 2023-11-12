@@ -26,9 +26,7 @@ public class AddUserToFile {
                 addFile(newFileName, newUser);
             }
         }
-
     }
-
 
     static void reWritFile(String newUser, String fName) {
 
